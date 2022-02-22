@@ -30,6 +30,5 @@ body{
     color: var(--orangePrimary);
     border-radius: 15px;
     width: 150px;
-    text-align: center;
-    
+    text-align: center;    
 }
