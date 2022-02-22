@@ -1,0 +1,35 @@
+:root{
+    --orangePrimary:#f2b366;
+    --brownMenu:#3f2f21;
+    --greyBackgrounds:rgb(190,183,171,0.3);
+}   
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    background-color: var(--greyBackgrounds);
+    padding: 2ch;
+}
+.header--title{
+    color: var(--orangePrimary);
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+    text-align: center; 
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+.menu--item{
+    text-decoration: none;
+    padding:  0.2rem;
+    background-color: var(--brownMenu) ;
+    color: var(--orangePrimary);
+    border-radius: 15px;
+    width: 150px;
+    text-align: center;
+    
+}
