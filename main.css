@@ -30,5 +30,19 @@ body{
     color: var(--orangePrimary);
     border-radius: 15px;
     width: 150px;
-    text-align: center;    
+    text-align: center;
+}
+.hero{
+    height: 50vh;
+    background-image: url('/img/yawingCat.png');
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    text-shadow: 5px 5px black;
+    background-position: center 1%;
 }
