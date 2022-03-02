@@ -39,9 +39,27 @@
 
     <footer class="footer">
         <p class="text_footer">PROGAT es una asociación sín ánimo de lucro. Apóyanos con <a class="donation">una donación</a>. Muchas gracias!</p>
+        <p>Actualmente hay <span id="numeroGatos">10</span> gato/s para adoptar!</p>
     </footer>
     <div id="swipeUp">
         <a href="#header"><img src="./img/paw.png" alt="swipe up arrow"></a>
     </div>
+    <script>
+        //Debemos obtener el valor del nodo HTML identificando con el id
+        //Si no hay gatos tinene que ser azul el fondo
+        //  Se puede añadir un + para transformar un string en numero + document.getElementById("numeroGatos").textContent;
+        let numeroGatos = parseInt(document.getElementById("numeroGatos").textContent);
+            if (numeroGatos==0) {
+                document.getElementById("numeroGatos").parentElement.style.backgroundColor="blue";
+                document.getElementById("numeroGatos").parentElement.style.color="white";
+            } else if ( numeroGatos>=1 && numeroGatos <=5){
+                document.getElementById("numeroGatos").parentElement.style.backgroundColor="yellow";               
+            }else{
+                document.getElementById("numeroGatos").parentElement.style.backgroundColor="red";
+                document.getElementById("numeroGatos").parentElement.style.color="white";
+         }
+            
+    </script>
+    <script src="bucles.js"></script>
 </body>
 </html>
